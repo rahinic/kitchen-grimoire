@@ -1,0 +1,23 @@
+# ---- Site identity (change these any time) ----
+title: "The Kitchen Grimoire"          # working title – swap for your final name
+tagline: "small spells from a quiet kitchen"
+description: "Recipes, herbs and slow kitchen magic by Rahini."
+author: "Rahini"
+
+# ---- GitHub Pages address ----
+# Repo named rahinic.github.io  -> baseurl: ""
+# Any other repo name, e.g. "kitchen" -> baseurl: "/kitchen"
+url: "https://rahinic.github.io"
+baseurl: "/kitchen-grimoire"   # must match the repo name
+
+# ---- Recipes live in the _recipes folder, one .md file each ----
+collections:
+  recipes:
+    output: true
+    permalink: /recipes/:name/
+
+defaults:
+  - scope: { path: "", type: recipes }
+    values: { layout: recipe }
+
+exclude: [README.md, HOW-TO-ADD-A-RECIPE.md]

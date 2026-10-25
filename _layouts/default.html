@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ page.tagline | default: site.description }}">
+  <meta property="og:title" content="{{ page.title | default: site.title }}">
+  <meta property="og:description" content="{{ page.tagline | default: site.description }}">
+  {% if page.leaflet %}<meta property="og:image" content="{{ page.leaflet | absolute_url }}">{% endif %}
+  <link rel="preload" as="image" href="{{ '/assets/img/bg-wide.jpg' | relative_url }}" media="(orientation: landscape)">
+  <link rel="preload" as="image" href="{{ '/assets/img/bg-tall.jpg' | relative_url }}" media="(orientation: portrait)">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <style>
+    :root{
+      --bg-wide:url("{{ '/assets/img/bg-wide.jpg' | relative_url }}");
+      --bg-tall:url("{{ '/assets/img/bg-tall.jpg' | relative_url }}");
+    }
+  </style>
+</head>
+<body class="{{ page.layout }}">
+  <div class="scene" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+  </header>
+
+  <main>
+    {{ content }}
+  </main>
+
+  <footer class="foot">
+    <span>Made slowly in Berlin by {{ site.author }}</span>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,114 @@
+/* ---------- fonts (self-hosted: no Google Fonts requests, GDPR-friendly) ---------- */
+@font-face{font-family:"Fell";src:url(../fonts/im-fell-english-latin-400-normal.woff2) format("woff2");font-display:swap}
+@font-face{font-family:"Fell";font-style:italic;src:url(../fonts/im-fell-english-latin-400-italic.woff2) format("woff2");font-display:swap}
+@font-face{font-family:"Corm";font-weight:500;src:url(../fonts/cormorant-garamond-latin-500-normal.woff2) format("woff2");font-display:swap}
+@font-face{font-family:"Corm";font-weight:500;font-style:italic;src:url(../fonts/cormorant-garamond-latin-500-italic.woff2) format("woff2");font-display:swap}
+@font-face{font-family:"Corm";font-weight:700;src:url(../fonts/cormorant-garamond-latin-700-normal.woff2) format("woff2");font-display:swap}
+@font-face{font-family:"Hand";font-weight:500;src:url(../fonts/caveat-latin-500-normal.woff2) format("woff2");font-display:swap}
+
+:root{
+  --ink:#3a2a1b; --soft:#6b5139; --olive:#55622c; --rust:#9c4f2a;
+  --paper:#f7f0de; --paper-2:#efe4c8; --line:rgba(85,98,44,.35);
+  --serif:"Corm",Georgia,serif; --title:"Fell",Georgia,serif; --hand:"Hand","Bradley Hand",cursive;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-variant-numeric:lining-nums;background:var(--paper-2);color:var(--ink);font-family:var(--serif);font-weight:500;font-size:19px;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:var(--olive)}
+img{max-width:100%;display:block}
+
+/* ---------- the scene: your painted kitchen stays behind everything ---------- */
+.scene{position:fixed;inset:0;z-index:-1;background:var(--bg-wide) center/cover no-repeat}
+@media (orientation:portrait){.scene{background-image:var(--bg-tall);background-position:center top}}
+
+/* ---------- top bar ---------- */
+.topbar{position:absolute;top:0;left:0;right:0;padding:18px 24px;z-index:5}
+.brand{font-family:var(--title);font-size:20px;color:var(--ink);text-decoration:none;background:rgba(247,240,222,.78);padding:6px 14px;border-radius:999px;box-shadow:0 1px 6px rgba(60,40,20,.12)}
+
+/* ---------- hero: text sits in the empty parchment of the painting ---------- */
+.hero{min-height:100svh;display:flex;align-items:center;justify-content:center;position:relative;padding:90px 16px 80px}
+.hero-inner{text-align:center;max-width:560px;transform:translate(6vw,-6vh);
+  text-shadow:0 0 18px rgba(247,240,222,.95),0 0 4px rgba(247,240,222,.9)}
+@media (orientation:portrait){.hero-inner{transform:translate(2vw,-4vh);max-width:78vw}}
+.kicker{font-family:var(--serif);font-weight:700;font-size:13px;letter-spacing:.32em;text-transform:uppercase;color:var(--olive);margin:0 0 10px}
+.hero h1{font-family:var(--title);font-weight:400;font-size:clamp(40px,6vw,74px);line-height:1.02;margin:0;color:var(--ink)}
+.tagline{font-family:var(--hand);font-size:clamp(24px,2.6vw,32px);color:var(--rust);margin:10px 0 6px}
+.meta{font-weight:700;font-size:14px;letter-spacing:.28em;text-transform:uppercase;color:var(--olive);margin:12px 0 0;display:flex;gap:12px;justify-content:center;align-items:center}
+.meta::before,.meta::after{content:"";width:46px;height:1px;background:var(--olive);opacity:.55}
+.meta span{white-space:nowrap}
+@media (max-width:480px){.meta{letter-spacing:.18em;gap:8px}.meta::before,.meta::after{width:22px}}
+.intro{font-style:italic;font-size:21px;color:var(--soft);margin:14px auto 0;max-width:420px}
+.scroll-cue{position:absolute;bottom:22px;left:50%;transform:translateX(-50%);width:44px;height:44px;border-radius:50%;display:grid;place-items:center;text-decoration:none;
+  background:rgba(247,240,222,.85);color:var(--olive);font-size:20px;box-shadow:0 2px 10px rgba(60,40,20,.15);animation:bob 2.4s ease-in-out infinite}
+@keyframes bob{50%{transform:translate(-50%,6px)}}
+@media (prefers-reduced-motion:reduce){.scroll-cue{animation:none}html{scroll-behavior:auto}}
+
+/* ---------- the parchment sheet that scrolls over the scene ---------- */
+.sheet{position:relative;max-width:900px;margin:0 auto 10vh;padding:clamp(28px,5vw,64px) clamp(16px,5vw,64px);
+  background:linear-gradient(rgba(247,240,222,.96),rgba(244,235,212,.96));border-radius:6px;
+  box-shadow:0 18px 50px rgba(50,35,15,.28),inset 0 0 0 1px rgba(120,95,60,.15),inset 0 0 0 10px rgba(247,240,222,.6),inset 0 0 0 11px var(--line)}
+@media (max-width:640px){.sheet{margin:0 10px 8vh}}
+
+h2{font-family:var(--title);font-weight:400;font-size:30px;color:var(--olive);text-align:center;margin:0 0 18px;letter-spacing:.04em}
+.sprig{display:inline-block;color:var(--olive);opacity:.75;font-size:.8em;vertical-align:.08em}
+.sprig.flip{transform:scaleX(-1)}
+
+/* story */
+.story{max-width:620px;margin:0 auto 40px;text-align:center;font-style:italic;font-size:23px;line-height:1.55;color:var(--soft)}
+.story p{margin:0 0 .7em}
+.story::after{content:"— Rahini";display:block;font-family:var(--hand);font-style:normal;font-size:28px;color:var(--rust);margin-top:6px}
+
+/* leaflet */
+.leaflet{margin:0 auto 48px;max-width:440px;text-align:center}
+.leaflet-tabs{display:inline-flex;gap:4px;margin-bottom:12px;background:rgba(85,98,44,.1);padding:4px;border-radius:999px}
+.leaflet-tabs button{font:700 13px var(--serif);letter-spacing:.18em;text-transform:uppercase;border:0;background:none;color:var(--olive);padding:7px 14px;border-radius:999px;cursor:pointer}
+.leaflet-tabs button.on{background:var(--paper);box-shadow:0 1px 4px rgba(60,40,20,.15)}
+.leaflet img{border-radius:4px;box-shadow:0 10px 30px rgba(50,35,15,.25);width:100%;height:auto}
+.pin{display:inline-block;margin-top:14px;font-weight:700;font-size:13px;letter-spacing:.2em;text-transform:uppercase;text-decoration:none;color:#fff;background:#b23a2e;padding:9px 18px;border-radius:999px}
+
+/* gather + make */
+.cook{display:grid;grid-template-columns:1fr 1.5fr;gap:clamp(24px,4vw,56px);align-items:start}
+@media (max-width:760px){.cook{grid-template-columns:1fr}}
+.checklist{list-style:none;margin:0;padding:0}
+.checklist li{border-bottom:1px dashed var(--line)}
+.checklist label{display:flex;gap:12px;align-items:flex-start;padding:9px 2px;cursor:pointer}
+.checklist input{appearance:none;flex:none;width:20px;height:20px;margin-top:4px;border:1.5px solid var(--olive);border-radius:50%;display:grid;place-items:center;cursor:pointer;background:transparent}
+.checklist input:checked{background:var(--olive)}
+.checklist input:checked::after{content:"✓";color:var(--paper);font-size:13px;line-height:1}
+.checklist input:checked+span{text-decoration:line-through;text-decoration-color:rgba(85,98,44,.6);opacity:.55}
+.steps{list-style:none;counter-reset:s;margin:0;padding:0}
+.steps li{counter-increment:s;position:relative;padding:0 0 18px 50px;cursor:pointer;transition:opacity .2s}
+.steps li::before{content:counter(s);position:absolute;left:0;top:-1px;width:32px;height:32px;border-radius:50%;border:1.5px solid var(--olive);color:var(--olive);font-family:var(--title);font-size:18px;display:grid;place-items:center;background:var(--paper)}
+.steps li:not(:last-child)::after{content:"";position:absolute;left:16px;top:34px;bottom:4px;width:1px;background:var(--line)}
+.steps li.done{opacity:.45}
+.steps li.done::before{content:"✓";background:var(--olive);color:var(--paper)}
+.cookmode-btn,.cm-nav button{font:700 14px var(--serif);letter-spacing:.2em;text-transform:uppercase;border:1.5px solid var(--olive);background:var(--olive);color:var(--paper);padding:12px 22px;border-radius:999px;cursor:pointer;margin-left:50px}
+.closing{font-family:var(--hand);font-size:34px;color:var(--rust);text-align:center;margin:44px 0 10px}
+.back{text-align:center;margin-top:24px;font-size:18px}
+.back a{text-decoration:none}
+
+/* cook mode overlay */
+.cookmode{position:fixed;inset:0;z-index:50;background:rgba(40,30,15,.45);display:grid;place-items:center;padding:16px}
+.cookmode[hidden]{display:none}
+.cm-card{position:relative;background:var(--paper);width:min(720px,100%);min-height:min(70vh,560px);border-radius:8px;padding:56px clamp(20px,6vw,64px) 32px;display:flex;flex-direction:column;box-shadow:0 20px 60px rgba(0,0,0,.35)}
+.cm-count{font-weight:700;letter-spacing:.3em;text-transform:uppercase;font-size:14px;color:var(--olive);margin:0;text-align:center}
+.cm-step{flex:1;display:flex;align-items:center;justify-content:center;text-align:center;font-size:clamp(26px,4.4vw,40px);line-height:1.3;margin:20px 0}
+.cm-nav{display:flex;justify-content:space-between;gap:12px}
+.cm-nav button{margin:0}
+.cm-nav .cm-prev{background:transparent;color:var(--olive)}
+.cm-nav button:disabled{opacity:.3;cursor:default}
+.cm-close{position:absolute;top:10px;right:14px;border:0;background:none;font-size:34px;color:var(--soft);cursor:pointer;line-height:1}
+
+/* home grid */
+.shelf-title{margin-bottom:28px}
+.grid{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:28px}
+.card a{display:block;text-decoration:none;color:inherit}
+.thumb{aspect-ratio:4/5;overflow:hidden;border-radius:4px;box-shadow:0 8px 22px rgba(50,35,15,.22);transition:transform .25s}
+.thumb img{width:100%;height:100%;object-fit:cover;object-position:top}
+.card a:hover .thumb{transform:translateY(-4px) rotate(-.6deg)}
+.card h3{font-family:var(--title);font-weight:400;font-size:24px;line-height:1.15;margin:14px 0 4px;color:var(--ink)}
+.card p{font-family:var(--hand);font-size:22px;color:var(--rust);margin:0}
+
+/* footer */
+.foot{text-align:center;padding:0 16px 36px;font-style:italic;color:var(--ink)}
+.foot span{background:rgba(247,240,222,.8);padding:6px 14px;border-radius:999px}
