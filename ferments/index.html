@@ -1,0 +1,42 @@
+---
+layout: default
+title: "Fermentation Journal"
+tagline: "jars, bubbles and patience"
+---
+{% include ferments-split.html %}
+<section class="hero">
+  <div class="hero-inner">
+    <h1>Fermentation Journal</h1>
+    <p class="tagline">jars, bubbles and patience</p>
+  </div>
+  <a class="scroll-cue" href="#shelves" aria-label="Scroll to the shelves">↓</a>
+</section>
+
+<section class="sheet" id="shelves">
+  <h2 class="shelf-title"><span class="sprig">❦</span> Bubbling now <span class="sprig flip">❦</span></h2>
+  {% if active_ferments.size > 0 %}
+  <ul class="grid">
+    {% for f in active_ferments %}{% include ferment-card.html f=f %}{% endfor %}
+  </ul>
+  {% else %}
+  <p class="empty-shelf">Nothing bubbling right now.</p>
+  {% endif %}
+
+  <h2 class="shelf-title second"><span class="sprig">❦</span> From the cellar <span class="sprig flip">❦</span></h2>
+  {% if done_ferments.size > 0 %}
+  <ul class="grid">
+    {% for f in done_ferments %}{% include ferment-card.html f=f %}{% endfor %}
+  </ul>
+  {% else %}
+  <p class="empty-shelf">Nothing finished yet. Patience.</p>
+  {% endif %}
+
+  {% if site.data.curiosities.size > 0 %}
+  <h2 class="shelf-title second"><span class="sprig">❦</span> Curiosity shelf <span class="sprig flip">❦</span></h2>
+  <ul class="curiosities">
+    {% for c in site.data.curiosities %}
+    <li><strong>{{ c.name }}</strong><span>{{ c.note }}</span></li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+</section>

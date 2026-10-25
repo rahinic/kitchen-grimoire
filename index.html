@@ -24,4 +24,17 @@ layout: default
     </li>
     {% endfor %}
   </ul>
+
+  {% include ferments-split.html %}
+  {% if active_ferments.size > 0 %}
+  <div class="bubbling-strip">
+    <h2><span class="sprig">❦</span> Bubbling now <span class="sprig flip">❦</span></h2>
+    <ul>
+      {% for f in active_ferments %}
+      <li><a href="{{ f.url | relative_url }}"><span class="no">{{ f.batch }}</span> {{ f.title }}</a></li>
+      {% endfor %}
+    </ul>
+    <a class="all" href="{{ '/ferments/' | relative_url }}">all ferments →</a>
+  </div>
+  {% endif %}
 </section>

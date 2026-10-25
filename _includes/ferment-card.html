@@ -1,0 +1,20 @@
+{%- assign f = include.f -%}
+{%- assign f_photo = f.photos[0] -%}
+{%- if f_photo.src %}{% assign f_photo = f_photo.src %}{% endif -%}
+<li class="card ferment-card">
+  <a href="{{ f.url | relative_url }}">
+    <div class="thumb">
+      {%- if f_photo %}
+      <img src="{{ f_photo | relative_url }}" alt="" loading="lazy">
+      {%- else %}
+      <div class="jar-ph" aria-hidden="true">
+        <svg viewBox="0 0 64 80" width="96" height="120" focusable="false"><path d="M20 6h24v8c8 3 12 9 12 18v34a8 8 0 0 1-8 8H16a8 8 0 0 1-8-8V32c0-9 4-15 12-18z" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/><path d="M12 38h40" stroke="currentColor" stroke-width="2" opacity=".5"/><circle cx="24" cy="54" r="3" fill="currentColor" opacity=".55"/><circle cx="38" cy="48" r="2.2" fill="currentColor" opacity=".55"/><circle cx="34" cy="62" r="2.6" fill="currentColor" opacity=".55"/></svg>
+      </div>
+      {%- endif %}
+    </div>
+    <p class="batch-no">Batch {{ f.batch }}</p>
+    <h3>{{ f.title }}</h3>
+    <span class="badge s-{{ f.status | slugify }}">{{ f.status }}</span>
+    <p>{{ f.tagline }}</p>
+  </a>
+</li>

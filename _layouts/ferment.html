@@ -1,0 +1,82 @@
+---
+layout: default
+---
+{%- assign status_lc = page.status | downcase -%}
+{%- assign started = page.started | date: "%Y-%m-%d" -%}
+<section class="hero">
+  <div class="hero-inner">
+    <p class="kicker">Batch {{ page.batch }}</p>
+    <h1>{{ page.title }}</h1>
+    <p class="tagline">{{ page.tagline }}</p>
+    <p class="status-line"><span class="badge s-{{ page.status | slugify }}">{{ page.status }}</span></p>
+    {%- if started and started != "" %}
+    <p class="meta"><span>Started {{ page.started | date: "%-d %B %Y" }}</span>
+      {%- if status_lc != "finished" %}<span class="dot">·</span><span class="daycount" data-started="{{ started }}"></span>{% endif %}</p>
+    {%- else %}
+    <p class="meta"><span>Start date not recorded</span></p>
+    {%- endif %}
+  </div>
+  <a class="scroll-cue" href="#story" aria-label="Scroll to the journal">↓</a>
+</section>
+
+<article class="sheet" id="story">
+  <div class="story">
+    {{ content }}
+  </div>
+
+  {%- assign has_setup = false -%}
+  {%- if page.vessel and page.vessel != "" %}{% assign has_setup = true %}{% endif -%}
+  {%- if page.salt and page.salt != "" %}{% assign has_setup = true %}{% endif -%}
+  {%- if page.temp and page.temp != "" %}{% assign has_setup = true %}{% endif -%}
+  {%- if page.ingredients.size > 0 %}{% assign has_setup = true %}{% endif -%}
+  {%- if has_setup %}
+  <section class="setup">
+    <h2><span class="sprig">❦</span> Setup <span class="sprig flip">❦</span></h2>
+    <dl>
+      {%- if page.vessel and page.vessel != "" %}<div><dt>Vessel</dt><dd>{{ page.vessel }}</dd></div>{% endif %}
+      {%- if page.salt and page.salt != "" %}<div><dt>Salt</dt><dd>{{ page.salt }}</dd></div>{% endif %}
+      {%- if page.temp and page.temp != "" %}<div><dt>Temperature</dt><dd>{{ page.temp }}</dd></div>{% endif %}
+      {%- if page.ingredients.size > 0 %}
+      <div><dt>Ingredients</dt><dd><ul>{% for item in page.ingredients %}<li>{{ item }}</li>{% endfor %}</ul></dd></div>
+      {%- endif %}
+    </dl>
+  </section>
+  {%- endif %}
+
+  {%- if page.log.size > 0 %}
+  <section class="logbook">
+    <h2><span class="sprig">❦</span> The log <span class="sprig flip">❦</span></h2>
+    <ol class="timeline">
+      {%- for entry in page.log %}
+      <li><span class="when">{{ entry.day }}</span><p>{{ entry.note }}</p></li>
+      {%- endfor %}
+    </ol>
+  </section>
+  {%- endif %}
+
+  {%- if page.troubles and page.troubles != "" or page.lessons and page.lessons != "" %}
+  <div class="notes">
+    {%- if page.troubles and page.troubles != "" %}
+    <section class="note-block troubles"><h3>Troubles</h3><p>{{ page.troubles }}</p></section>
+    {%- endif %}
+    {%- if page.lessons and page.lessons != "" %}
+    <section class="note-block lessons"><h3>Lessons</h3><p>{{ page.lessons }}</p></section>
+    {%- endif %}
+  </div>
+  {%- endif %}
+
+  {%- if page.photos.size > 0 %}
+  <section class="gallery">
+    {%- for p in page.photos %}
+    {%- assign p_src = p.src | default: p %}
+    <figure><img src="{{ p_src | relative_url }}" alt="{{ p.alt | default: page.title }}" loading="lazy">{% if p.caption %}<figcaption>{{ p.caption }}</figcaption>{% endif %}</figure>
+    {%- endfor %}
+  </section>
+  {%- endif %}
+
+  <p class="disclaimer">This is a personal journal of what I tried, not food-safety advice.</p>
+
+  <nav class="back"><a href="{{ '/ferments/' | relative_url }}">← all ferments</a></nav>
+</article>
+
+<script src="{{ '/assets/js/ferment.js' | relative_url }}" defer></script>
