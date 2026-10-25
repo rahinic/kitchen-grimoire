@@ -28,6 +28,9 @@ log:
 photos:
   - src: /assets/ferments/002-ginger-beer/1.jpg
     alt: "Three swing-top bottles of cloudy golden ginger beer, side by side"
+  - src: /assets/ferments/002-ginger-beer/2.jpg
+    alt: "A bottle of ginger beer held up to a window, full of fine rising bubbles"
+    caption: "Most recent: carbonation"
 troubles: "No pH meter or strips at home, and on a Sunday in Berlin I couldn't get any. I relied on smell, looks and fizz."
 lessons: "Write the sugar down before adding it, not after."
 ---
