@@ -2,6 +2,7 @@
 title: "Lemony White Bean Pasta"
 tagline: "aglio e olio's cosier cousin"
 date: 2026-10-25
+category: dinner
 serves: 2
 time: 20
 closing: "Simple ingredients. Big comfort."

@@ -6,6 +6,13 @@ layout: default
     <h1>{{ site.title }}</h1>
     <p class="tagline">{{ site.tagline }}</p>
     <p class="intro">Recipes I cook, herbs I keep, and the little rituals of a quiet kitchen.</p>
+    <nav class="hero-links" aria-label="Browse the grimoire">
+      <a href="{{ '/ferments/' | relative_url }}">Fermentation</a>
+      <a href="{{ '/dinner/' | relative_url }}">Dinner</a>
+      <a href="{{ '/breads/' | relative_url }}">Breads</a>
+      <a href="{{ '/snacks/' | relative_url }}">Snacks</a>
+      <a href="{{ '/desserts/' | relative_url }}">Desserts</a>
+    </nav>
   </div>
   <a class="scroll-cue" href="#recipes" aria-label="Scroll to recipes">↓</a>
 </section>

@@ -1,0 +1,35 @@
+---
+layout: default
+---
+<section class="hero">
+  <div class="hero-inner">
+    <p class="kicker">From the grimoire</p>
+    <h1>{{ page.title }}</h1>
+    <p class="tagline">{{ page.tagline }}</p>
+  </div>
+  <a class="scroll-cue" href="#shelf" aria-label="Scroll to the recipes">↓</a>
+</section>
+
+<section class="sheet" id="shelf">
+  {%- assign shelf = "" | split: "" -%}
+  {%- assign all_recipes = site.recipes | sort: "date" | reverse -%}
+  {%- for r in all_recipes -%}
+    {%- if r.category == page.category -%}{%- assign shelf = shelf | push: r -%}{%- endif -%}
+  {%- endfor -%}
+  {% if shelf.size > 0 %}
+  <ul class="grid">
+    {% for r in shelf %}
+    <li class="card">
+      <a href="{{ r.url | relative_url }}">
+        <div class="thumb"><img src="{{ r.leaflet | relative_url }}" alt="" loading="lazy"></div>
+        <h3>{{ r.title }}</h3>
+        <p>{{ r.tagline }}</p>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+  <p class="empty-shelf">Nothing on this shelf yet. Recipes are still being written.</p>
+  {% endif %}
+  <nav class="back"><a href="{{ '/' | relative_url }}">← all recipes</a></nav>
+</section>
