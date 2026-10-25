@@ -25,6 +25,9 @@ log:
     note: "The big bottle is full of fine bubbles with sediment settled at the bottom. The other two are quieter."
   - day: "First burp"
     note: "Opened slowly: a hiss of carbonation, no overflow."
+photos:
+  - src: /assets/ferments/002-ginger-beer/1.jpg
+    alt: "Three swing-top bottles of cloudy golden ginger beer, side by side"
 troubles: "No pH meter or strips at home, and on a Sunday in Berlin I couldn't get any. I relied on smell, looks and fizz."
 lessons: "Write the sugar down before adding it, not after."
 ---
