@@ -13,6 +13,11 @@ tagline: "jars, bubbles and patience"
 </section>
 
 <section class="sheet" id="shelves">
+  <p class="code-key"><strong>Code key</strong>
+    {%- for c in site.data.ferment_codes %} {{ c.code }} = {{ c.meaning }}{% unless forloop.last %} ·{% endunless %}{% endfor %}.
+    Each code has its own serial number, e.g. SD.001.<br>
+    Day numbering starts at 1: day 1 = start date.</p>
+
   <h2 class="shelf-title"><span class="sprig">❦</span> Bubbling now <span class="sprig flip">❦</span></h2>
   {% if active_ferments.size > 0 %}
   <ul class="grid">

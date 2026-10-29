@@ -5,11 +5,11 @@ layout: default
 {%- assign started = page.started | date: "%Y-%m-%d" -%}
 <section class="hero">
   <div class="hero-inner">
-    <p class="kicker">Batch {{ page.batch }}</p>
+    <p class="kicker">Batch {{ page.batch }}{% if page.code %} · {{ page.code }}{% endif %}</p>
     <h1>{{ page.title }}</h1>
     <p class="tagline">{{ page.tagline }}</p>
     <p class="status-line"><span class="badge s-{{ page.status | slugify }}">{{ page.status }}</span></p>
-    {%- if started and started != "" %}
+    {%- if started and started != "" and started != "?" %}
     <p class="meta"><span>Started {{ page.started | date: "%-d %B %Y" }}</span>
       {%- if status_lc != "finished" %}<span class="dot">·</span><span class="daycount" data-started="{{ started }}"></span>{% endif %}</p>
     {%- else %}
@@ -28,12 +28,14 @@ layout: default
   {%- if page.vessel and page.vessel != "" %}{% assign has_setup = true %}{% endif -%}
   {%- if page.salt and page.salt != "" %}{% assign has_setup = true %}{% endif -%}
   {%- if page.temp and page.temp != "" %}{% assign has_setup = true %}{% endif -%}
+  {%- if page.cover and page.cover != "" %}{% assign has_setup = true %}{% endif -%}
   {%- if page.ingredients.size > 0 %}{% assign has_setup = true %}{% endif -%}
   {%- if has_setup %}
   <section class="setup">
     <h2><span class="sprig">❦</span> Setup <span class="sprig flip">❦</span></h2>
     <dl>
       {%- if page.vessel and page.vessel != "" %}<div><dt>Vessel</dt><dd>{{ page.vessel }}</dd></div>{% endif %}
+      {%- if page.cover and page.cover != "" %}<div><dt>Cover</dt><dd>{{ page.cover }}</dd></div>{% endif %}
       {%- if page.salt and page.salt != "" %}<div><dt>Salt</dt><dd>{{ page.salt }}</dd></div>{% endif %}
       {%- if page.temp and page.temp != "" %}<div><dt>Temperature</dt><dd>{{ page.temp }}</dd></div>{% endif %}
       {%- if page.ingredients.size > 0 %}
@@ -54,13 +56,20 @@ layout: default
   </section>
   {%- endif %}
 
-  {%- if page.troubles and page.troubles != "" or page.lessons and page.lessons != "" %}
+  {%- assign has_notes = false -%}
+  {%- if page.troubles and page.troubles != "" %}{% assign has_notes = true %}{% endif -%}
+  {%- if page.lessons and page.lessons != "" %}{% assign has_notes = true %}{% endif -%}
+  {%- if page.verdict and page.verdict != "" %}{% assign has_notes = true %}{% endif -%}
+  {%- if has_notes %}
   <div class="notes">
     {%- if page.troubles and page.troubles != "" %}
     <section class="note-block troubles"><h3>Troubles</h3><p>{{ page.troubles }}</p></section>
     {%- endif %}
     {%- if page.lessons and page.lessons != "" %}
     <section class="note-block lessons"><h3>Lessons</h3><p>{{ page.lessons }}</p></section>
+    {%- endif %}
+    {%- if page.verdict and page.verdict != "" %}
+    <section class="note-block verdict"><h3>Verdict</h3><p>{{ page.verdict }}</p></section>
     {%- endif %}
   </div>
   {%- endif %}

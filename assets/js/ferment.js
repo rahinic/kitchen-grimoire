@@ -9,5 +9,5 @@
   var today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
   var days = Math.round((today - start) / 86400000);
   if (days < 0) return hide();
-  el.textContent = 'Day ' + days;
+  el.textContent = 'Day ' + (days + 1);
 })();

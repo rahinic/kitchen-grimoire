@@ -12,7 +12,7 @@
       </div>
       {%- endif %}
     </div>
-    <p class="batch-no">Batch {{ f.batch }}</p>
+    <p class="batch-no">Batch {{ f.batch }}{% if f.code %} · {{ f.code }}{% endif %}</p>
     <h3>{{ f.title }}</h3>
     <span class="badge s-{{ f.status | slugify }}">{{ f.status }}</span>
     <p>{{ f.tagline }}</p>

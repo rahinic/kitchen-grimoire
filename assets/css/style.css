@@ -182,3 +182,8 @@ h2{font-family:var(--title);font-weight:400;font-size:30px;color:var(--olive);te
 .hero-links{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:22px auto 0;text-shadow:none}
 .hero-links a{font-family:var(--title);font-size:18px;text-decoration:none;color:var(--ink);background:rgba(247,240,222,.88);border:1.5px solid var(--olive);padding:6px 14px;border-radius:999px;box-shadow:0 1px 6px rgba(60,40,20,.12);transition:background .2s,color .2s,transform .2s}
 .hero-links a:hover,.hero-links a:focus-visible{background:var(--olive);color:var(--paper);transform:translateY(-2px)}
+
+/* ferment codes + verdict */
+.code-key{text-align:center;font-style:italic;font-size:17px;color:var(--soft);margin:0 0 30px}
+.code-key strong{font-style:normal;font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:var(--olive);margin-right:6px}
+.note-block.verdict{grid-column:1/-1}
