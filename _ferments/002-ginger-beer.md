@@ -13,7 +13,7 @@ ingredients:
   - 7 cups water
   - 10 tbsp sugar
   - Ginger (non-organic)
-  - Ginger bug (batch 001)
+  - Ginger bug (GB.001)
 log:
   - day: "Day 0"
     note: "Mixed the batch in the 2 L jar under a cloth. 10 tbsp of sugar. Yikes."

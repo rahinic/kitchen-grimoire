@@ -3,7 +3,7 @@ batch: "001"
 code: "GB.001"
 title: "Ginger Bug"
 tagline: "the starter that started it all"
-status: "In use"
+status: "Retired"
 started: "?"
 vessel: "Clip-top glass jar"
 salt: "?"
@@ -21,9 +21,11 @@ log:
     note: "Declared ready to brew with."
   - day: "Day ?"
     note: "Used to start GBR.001."
+  - day: "Day ?"
+    note: "Retired: it didn't produce much fizz. GB.002 is the working bug now."
 troubles: "Bubbles dropped on day 6. I never found out why."
 lessons: "?"
-verdict: "Ready, and used for GBR.001."
+verdict: "Ready, and used for GBR.001. Retired later: it didn't produce much fizz."
 ---
 
-My first living jar. A ginger bug is a wild starter: ginger, sugar and water, fed until it fizzes with its own yeasts and bacteria. It's the engine behind batch 002.
+My first living jar. A ginger bug is a wild starter: ginger, sugar and water, fed until it fizzes with its own yeasts and bacteria. It's the engine behind GBR.001.

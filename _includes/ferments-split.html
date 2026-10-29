@@ -3,7 +3,7 @@
 {%- assign done_ferments = "" | split: "" -%}
 {%- for f in all_ferments -%}
   {%- assign f_status = f.status | downcase -%}
-  {%- if f_status == "finished" -%}
+  {%- if f_status == "finished" or f_status == "retired" -%}
     {%- assign done_ferments = done_ferments | push: f -%}
   {%- else -%}
     {%- assign active_ferments = active_ferments | push: f -%}

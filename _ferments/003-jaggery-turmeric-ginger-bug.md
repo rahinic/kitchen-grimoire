@@ -6,7 +6,7 @@ tagline: "fresh starter"
 status: "Ongoing"
 started: 2026-10-27
 vessel: "Glass jar (clip-top)"
-cover: "?"
+cover: "Cloth towel secured with a rubber band"
 salt: "None"
 temp: "Room temp, around 20°C"
 ingredients:
@@ -21,6 +21,8 @@ log:
     note: "Lid was clamped shut after the photos. Advised to use a loose cover (cloth or unclamped lid). Change not yet confirmed."
   - day: "Day 1"
     note: "Asked about covering with a large tea towel that shelters the jar from light. Plan not yet confirmed."
+  - day: "Day 1"
+    note: "Cover confirmed: the jar has been covered with a cloth towel secured with a rubber band since day 1."
   - day: "Day 2"
     note: "28.10.2026: Fed 1 tbsp ginger and 1 tbsp jaggery (heaped)."
   - day: "Day 3"
@@ -36,6 +38,6 @@ troubles: "?"
 lessons: "?"
 ---
 
-A fresh starter made with jaggery instead of sugar, plus fresh turmeric root, out of curiosity and for the added health benefit.
+A fresh starter made with jaggery instead of sugar, plus fresh turmeric root, out of curiosity and for the added health benefit. This is now my working ginger bug, the one I will use to make sodas from here on.
 
-Tracking: a daily photo (side and top-down, same time and light, before stirring) plus a one-line note, and a daily feed of 1 tbsp ginger and 1 tbsp jaggery.
+Tracking: a daily photo (side and top-down, same time and light, before stirring) plus a one-line note, and a daily feed of 1 tbsp ginger and 1 tbsp jaggery, at the same time every day, around 3 pm.

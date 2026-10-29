@@ -124,7 +124,7 @@ h2{font-family:var(--title);font-weight:400;font-size:30px;color:var(--olive);te
 .badge{display:inline-block;font:700 12px var(--serif);letter-spacing:.2em;text-transform:uppercase;padding:3px 12px;border-radius:999px;border:1.5px solid var(--olive);color:var(--olive);background:rgba(247,240,222,.85);text-shadow:none}
 .badge.s-bubbling,.badge.s-in-use{background:var(--olive);color:var(--paper)}
 .badge.s-carbonating{border-color:var(--rust);color:var(--rust)}
-.badge.s-finished{border-color:var(--soft);color:var(--soft)}
+.badge.s-finished,.badge.s-retired{border-color:var(--soft);color:var(--soft)}
 .status-line{margin:10px 0 0}
 .hero .meta.no-day .dot,.hero .meta.no-day .daycount{display:none}
 

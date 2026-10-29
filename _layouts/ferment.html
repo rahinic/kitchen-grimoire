@@ -5,13 +5,13 @@ layout: default
 {%- assign started = page.started | date: "%Y-%m-%d" -%}
 <section class="hero">
   <div class="hero-inner">
-    <p class="kicker">Batch {{ page.batch }}{% if page.code %} · {{ page.code }}{% endif %}</p>
+    <p class="kicker">{% if page.code %}{{ page.code }}{% else %}Batch {{ page.batch }}{% endif %}</p>
     <h1>{{ page.title }}</h1>
     <p class="tagline">{{ page.tagline }}</p>
     <p class="status-line"><span class="badge s-{{ page.status | slugify }}">{{ page.status }}</span></p>
     {%- if started and started != "" and started != "?" %}
     <p class="meta"><span>Started {{ page.started | date: "%-d %B %Y" }}</span>
-      {%- if status_lc != "finished" %}<span class="dot">·</span><span class="daycount" data-started="{{ started }}"></span>{% endif %}</p>
+      {%- if status_lc != "finished" and status_lc != "retired" %}<span class="dot">·</span><span class="daycount" data-started="{{ started }}"></span>{% endif %}</p>
     {%- else %}
     <p class="meta"><span>Start date not recorded</span></p>
     {%- endif %}
