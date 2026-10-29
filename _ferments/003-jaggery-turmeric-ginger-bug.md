@@ -25,6 +25,13 @@ log:
     note: "28.10.2026: Fed 1 tbsp ginger and 1 tbsp jaggery (heaped)."
   - day: "Day 3"
     note: "29.10.2026: Fed 1 tbsp ginger, 1/2 tsp turmeric, 1 tbsp jaggery. Photos: many fine bubbles and foam over the surface, ginger and orange turmeric pieces visible, no mold or film. Visibly more active than GB.001 at the same stage. Room temp ~20°C."
+photos:
+  - src: /assets/ferments/003-jaggery-turmeric-ginger-bug/1.jpg
+    alt: "Top-down view into the jar: very dark reddish-brown liquid with chopped unpeeled ginger pieces clustering near the surface"
+    caption: "Day 1, fresh after mixing"
+  - src: /assets/ferments/003-jaggery-turmeric-ginger-bug/2.jpg
+    alt: "Top-down view into the jar: fine bubbles and foam over the surface, with ginger and orange turmeric pieces visible"
+    caption: "Day 3"
 troubles: "?"
 lessons: "?"
 ---
