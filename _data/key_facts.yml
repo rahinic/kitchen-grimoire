@@ -28,3 +28,5 @@
   source: claude
 - text: "Rejected a bug for off smell, high pH and slime risk despite texture improving."
   source: me
+- text: "Stopped using the electronic pH meter: calibration was unreliable and readings were doubtful. Using analog pH strips (pass/fail below about pH 4) plus smell and look."
+  source: me

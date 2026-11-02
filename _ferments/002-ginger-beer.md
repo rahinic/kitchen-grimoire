@@ -28,7 +28,7 @@ log:
   - day: "First burp"
     note: "Opened slowly: a hiss of carbonation, no overflow."
   - day: "Later"
-    note: "pH measured with a new meter (calibration uncertain): tap water 5.93, mineral water 6.01, ginger soda 3.27."
+    note: "pH measured with a meter whose calibration was unverified: tap water 5.93, mineral water 6.01, ginger soda 3.27. Treat as indicative only."
   - day: "Later"
     note: "\"The taste is out of the world.\" Drank it with someone (photos)."
 photos:
