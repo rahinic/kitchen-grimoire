@@ -124,7 +124,7 @@ h2{font-family:var(--title);font-weight:400;font-size:30px;color:var(--olive);te
 .badge{display:inline-block;font:700 12px var(--serif);letter-spacing:.2em;text-transform:uppercase;padding:3px 12px;border-radius:999px;border:1.5px solid var(--olive);color:var(--olive);background:rgba(247,240,222,.85);text-shadow:none}
 .badge.s-bubbling,.badge.s-in-use{background:var(--olive);color:var(--paper)}
 .badge.s-carbonating{border-color:var(--rust);color:var(--rust)}
-.badge.s-finished,.badge.s-retired{border-color:var(--soft);color:var(--soft)}
+.badge.s-finished,.badge.s-retired,.badge.s-discarded{border-color:var(--soft);color:var(--soft)}
 .status-line{margin:10px 0 0}
 .hero .meta.no-day .dot,.hero .meta.no-day .daycount{display:none}
 
@@ -187,3 +187,8 @@ h2{font-family:var(--title);font-weight:400;font-size:30px;color:var(--olive);te
 .code-key{text-align:center;font-style:italic;font-size:17px;color:var(--soft);margin:0 0 30px}
 .code-key strong{font-style:normal;font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:var(--olive);margin-right:6px}
 .note-block.verdict{grid-column:1/-1}
+
+/* key facts */
+.key-facts{list-style:none;margin:0 auto;padding:0;max-width:620px}
+.key-facts li{padding:9px 2px;border-bottom:1px dashed var(--line)}
+.key-facts .src{display:block;font-size:14px;font-style:italic;color:var(--soft)}

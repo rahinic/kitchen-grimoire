@@ -44,4 +44,14 @@ tagline: "jars, bubbles and patience"
     {% endfor %}
   </ul>
   {% endif %}
+
+  {% if site.data.key_facts.size > 0 %}
+  <h2 class="shelf-title second"><span class="sprig">❦</span> Key facts <span class="sprig flip">❦</span></h2>
+  <ul class="key-facts">
+    {% for k in site.data.key_facts %}
+    <li>{{ k.text }} <span class="src">{% if k.source == "claude" %}from Claude{% else %}from my own experience{% endif %}</span></li>
+    {% endfor %}
+  </ul>
+  <p class="disclaimer">This is a personal journal of what I tried, not food-safety advice.</p>
+  {% endif %}
 </section>

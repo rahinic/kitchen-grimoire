@@ -22,7 +22,7 @@ log:
   - day: "Day ?"
     note: "Used to start GBR.001."
   - day: "Day ?"
-    note: "Retired: it didn't produce much fizz. GB.002 is the working bug now."
+    note: "Retired: it didn't produce much fizz."
 troubles: "Bubbles dropped on day 6. I never found out why."
 lessons: "?"
 verdict: "Ready, and used for GBR.001. Retired later: it didn't produce much fizz."

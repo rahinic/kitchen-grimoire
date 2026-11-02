@@ -1,9 +1,10 @@
 {%- assign all_ferments = site.ferments | sort: "batch" | reverse -%}
 {%- assign active_ferments = "" | split: "" -%}
 {%- assign done_ferments = "" | split: "" -%}
+{%- assign done_statuses = "finished,retired,discarded" | split: "," -%}
 {%- for f in all_ferments -%}
   {%- assign f_status = f.status | downcase -%}
-  {%- if f_status == "finished" or f_status == "retired" -%}
+  {%- if done_statuses contains f_status -%}
     {%- assign done_ferments = done_ferments | push: f -%}
   {%- else -%}
     {%- assign active_ferments = active_ferments | push: f -%}
