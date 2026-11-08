@@ -22,6 +22,16 @@ log:
     note: "06.11.2026: Clear amber liquid, no visible bubbles. Some ginger pieces above the liquid line with dry white crystalline patches. Removed dry pieces, pushed ginger under, fed 1 tsp ginger + 1 tsp brown sugar."
   - day: "Day 7"
     note: "08.11.2026: More white growth across the whole surface and over the ginger (photos), not obviously fuzzy. Little smell while inspecting, but a sewer-like waft when emptying the jar. Discarded."
+photos:
+  - src: /assets/ferments/004-brown-sugar-ginger-bug/3.jpg
+    alt: "Looking into the jar: ginger pieces in amber liquid, some with dry white crystalline patches"
+    caption: "Day 5, when the white growth first appeared"
+  - src: /assets/ferments/004-brown-sugar-ginger-bug/1.jpg
+    alt: "Top-down view into the jar: white growth spread across the surface and over the ginger pieces, with some small bubbles at the edges"
+    caption: "White growth across the surface"
+  - src: /assets/ferments/004-brown-sugar-ginger-bug/2.jpg
+    alt: "Side view of the jar: white growth over the surface and up the glass, above amber liquid with ginger pieces"
+    caption: "Side view"
 troubles: "No visible bubbles by day 5. Ginger above the liquid line dried out, then white growth spread across the surface. Smell off when emptied."
 lessons:
   - "Keep ginger submerged and stir daily. [from Claude]"
