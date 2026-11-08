@@ -151,9 +151,10 @@ h2{font-family:var(--title);font-weight:400;font-size:30px;color:var(--olive);te
 .note-block.troubles h3{color:var(--rust)}
 .note-block p{margin:0}
 
-.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:14px;max-width:700px;margin:0 auto 36px}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(300px,100%),1fr));gap:14px;max-width:700px;margin:0 auto 36px}
 .gallery figure{margin:0}
-.gallery img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:4px;box-shadow:0 6px 16px rgba(50,35,15,.2)}
+.gallery a{display:block}
+.gallery img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:4px;box-shadow:0 6px 16px rgba(50,35,15,.2)}
 .gallery figcaption{font-size:15px;font-style:italic;color:var(--soft);margin-top:4px}
 
 .disclaimer{text-align:center;font-style:italic;font-size:14px;color:var(--soft);margin:30px 0 0}

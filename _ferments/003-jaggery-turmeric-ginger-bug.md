@@ -42,6 +42,12 @@ photos:
   - src: /assets/ferments/003-jaggery-turmeric-ginger-bug/2.jpg
     alt: "Top-down view into the jar: fine bubbles and foam over the surface, with ginger and orange turmeric pieces visible"
     caption: "Day 3"
+  - src: /assets/ferments/003-jaggery-turmeric-ginger-bug/3.jpg
+    alt: "A spoon lifted out of the jar with ginger pieces in thick, syrupy liquid dripping back in a stream"
+    caption: "Gel-like and stringy off the spoon"
+  - src: /assets/ferments/003-jaggery-turmeric-ginger-bug/4.jpg
+    alt: "A spoon lifted out of the jar, with a thick strand of gel-like liquid stretching between the spoon and the jar"
+    caption: "Thick, stretchy strand"
 troubles: "Gel-like, stringy texture on day 4 (possible ropy bacteria). Sliminess went away after dilution, but pH stayed around 4-5 and the smell was off. Not comfortable continuing."
 lessons:
   - "Gel-like texture and pH about 4-5 with an off smell: restarted rather than nursing it."

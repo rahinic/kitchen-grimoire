@@ -100,7 +100,7 @@ layout: default
   <section class="gallery">
     {%- for p in page.photos %}
     {%- assign p_src = p.src | default: p %}
-    <figure><img src="{{ p_src | relative_url }}" alt="{{ p.alt | default: page.title }}" loading="lazy">{% if p.caption %}<figcaption>{{ p.caption }}</figcaption>{% endif %}</figure>
+    <figure><a href="{{ p_src | relative_url }}" target="_blank" rel="noopener"><img src="{{ p_src | relative_url }}" alt="{{ p.alt | default: page.title }}" loading="lazy"></a>{% if p.caption %}<figcaption>{{ p.caption }}</figcaption>{% endif %}</figure>
     {%- endfor %}
   </section>
   {%- endif %}
