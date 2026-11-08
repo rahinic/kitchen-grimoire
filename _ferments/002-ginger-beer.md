@@ -38,7 +38,7 @@ photos:
     alt: "A bottle of ginger beer held up to a window, full of fine rising bubbles"
     caption: "Most recent: carbonation"
 troubles: "No pH meter or strips at home, and on a Sunday in Berlin I couldn't get any. I relied on smell, looks and fizz. Worried about botulism before getting a pH meter. Worried about the 10 tbsp of sugar and glucose."
-lessons: "Write the sugar down before adding it, not after. Suggested by Claude, not yet tried: 6-7 tbsp sugar for this volume; recalibrate the meter with 4.01 and 7.00 buffers."
+lessons: "Write the sugar down before adding it, not after. Suggested by Claude, not yet tried: 6-7 tbsp sugar for this volume."
 verdict: "Success. Carbonated, pH 3.27, loved the taste."
 ---
 

@@ -8,10 +8,11 @@ started: "?"
 vessel: "Clip-top glass jar"
 salt: "?"
 temp: "?"
+cover: "Glass lid closed every day (opened for the daily feed)"
 ingredients:
-  - Ginger pieces
-  - Water
-  - Feed (amount not recorded)
+  - 250 ml water
+  - 1 tbsp ginger
+  - 1 tbsp sugar (white and brown, mixed between days)
 log:
   - day: "Day 5"
     note: "After five days of feeding, bubbles formed on top."
@@ -26,6 +27,7 @@ log:
 troubles: "Bubbles dropped on day 6. I never found out why."
 lessons: "?"
 verdict: "Ready, and used for GBR.001. Retired later: it didn't produce much fizz."
+notes: "No turmeric. Never showed signs of concern. Carbonation of the first ginger beer was low, per my note (see GBR.001)."
 ---
 
 My first living jar. A ginger bug is a wild starter: ginger, sugar and water, fed until it fizzes with its own yeasts and bacteria. It's the engine behind GBR.001.

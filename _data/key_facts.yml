@@ -12,8 +12,6 @@
   source: claude
 - text: "Short ferments give about 0.3-1% ABV. Over 0.5% isn't non-alcoholic in the EU."
   source: claude
-- text: "Calibrate the pH meter with fresh 4.01 and 7.00 buffers before use."
-  source: claude
 - text: "Turmeric in the bug is fine in small amounts, about 1 tsp per 2 tbsp ginger."
   source: claude
 - text: "Non-organic ginger still gave a healthy ferment (GBR.001)."
@@ -29,4 +27,14 @@
 - text: "Rejected a bug for off smell, high pH and slime risk despite texture improving."
   source: me
 - text: "Stopped using the electronic pH meter: calibration was unreliable and readings were doubtful. Using analog pH strips (pass/fail below about pH 4) plus smell and look."
+  source: me
+- text: "1 tbsp ginger + 1 tbsp sugar in 250 ml is a standard ratio for a ginger bug."
+  source: claude
+- text: "Sugar is the yeast's food. Too much builds a thick syrup that slows yeast and favors ropy bacteria. Too little starves it and lets mold in."
+  source: claude
+- text: "Ropy slime comes from bacteria turning sucrose into dextran. It is harmless but unpleasant."
+  source: claude
+- text: "Keep ginger submerged. Pieces above the liquid dry out and grow mold."
+  source: claude
+- text: "Ambient room temperature is 20-22°C in winter and is not adjustable. Expect bubbles on day 3-5."
   source: me

@@ -1,0 +1,8 @@
+title: "Hypotheses on the failures of GB.002 and GB.003"
+intro: "Differences from GB.001 (which worked): cloth cover instead of a closed lid, turmeric added, kept beside a monstera, and jaggery (GB.002 only)."
+items:
+  - text: "My theories: cloth cover, turmeric, and the plant location (moisture, spores). Untested."
+  - text: "Ranking: cover and plant location most likely (and they compound), jaggery likely for GB.002 only, turmeric least likely. Two different failure types: GB.002 was gel/bacteria-like, GB.003 was surface mold-like."
+    source: claude
+  - text: "GB.004 tests the jaggery and closed-lid variables. If it fails too, the remaining suspects are the ginger batch, the water, or the jar."
+    source: claude

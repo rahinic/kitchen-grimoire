@@ -7,6 +7,7 @@ status: "Discarded"
 started: 2026-10-27
 vessel: "Glass jar (clip-top)"
 cover: "Cloth towel secured with a rubber band"
+location: "Beside a house plant (monstera)"
 salt: "None"
 temp: "Room temp, around 20°C"
 ingredients:
@@ -14,6 +15,7 @@ ingredients:
   - 2 tbsp ginger
   - 2 tbsp jaggery
   - 1 tsp turmeric root
+  - Turmeric added every other day
 log:
   - day: "Day 1"
     note: "27.10.2026: Started with jaggery instead of sugar, plus fresh turmeric root (\"curious + added health benefit\"). Photographed: very dark reddish-brown clear liquid, chopped unpeeled ginger spread through it and clustering near the surface. No bubbles, foam, film or mold."
@@ -41,7 +43,9 @@ photos:
     alt: "Top-down view into the jar: fine bubbles and foam over the surface, with ginger and orange turmeric pieces visible"
     caption: "Day 3"
 troubles: "Gel-like, stringy texture on day 4 (possible ropy bacteria). Sliminess went away after dilution, but pH stayed around 4-5 and the smell was off. Not comfortable continuing."
-lessons: "1 tbsp jaggery per daily feed was too much sugar for 250 ml; use ~1 tsp. [from Claude] Don't keep a culture that smells off and sits at pH 4-5, even if the texture improves. (my decision)"
+lessons:
+  - "Gel-like texture and pH about 4-5 with an off smell: restarted rather than nursing it."
+  - "Daily 1 tbsp jaggery builds up roughly 5 tbsp of sugar in 250 ml by day 4. It's a risk factor, but GB.001 survived the same buildup, so it isn't a certain cause. [from Claude]"
 verdict: "Discarded 02.11.2026 (failed)."
 ---
 
