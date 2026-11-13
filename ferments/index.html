@@ -45,6 +45,13 @@ tagline: "jars, bubbles and patience"
   </ul>
   {% endif %}
 
+  {% if site.data.planned.size > 0 %}
+  <h2 class="shelf-title second"><span class="sprig">❦</span> Planned <span class="sprig flip">❦</span></h2>
+  <ul class="key-facts">
+    {% for t in site.data.planned %}<li>{{ t }}</li>{% endfor %}
+  </ul>
+  {% endif %}
+
   {% if site.data.open_questions.size > 0 %}
   <h2 class="shelf-title second"><span class="sprig">❦</span> Open questions <span class="sprig flip">❦</span></h2>
   <ul class="key-facts">

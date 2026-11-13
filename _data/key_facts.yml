@@ -6,6 +6,8 @@
   source: claude
 - text: "Don't clamp the jar during the first ferment. Use a cloth or an unclamped lid."
   source: claude
+- text: "From what I've observed in my past three bugs, a closed, clamped lid gives a livelier culture. As a precaution, I opened the jar and stirred it well once in the morning and once in the evening after feeding."
+  source: me
 - text: "Botulism needs pH above 4.6. Ginger beer is expected around pH 3-3.5."
   source: claude
 - text: "Fuzzy mold on the surface means discard. Flat white film is harmless yeast."
@@ -20,6 +22,8 @@
   source: me
 - text: "A bug should drop below pH 4 within a few days. A reading stuck around 4-5 together with an off smell means restart."
   source: claude
+- text: "A foamy, liquid, good-smelling bug can read pH 5-6 at day 5. I brewed with it anyway: the other signs said ready, and I was growing suspicious of the strips themselves."
+  source: me
 - text: "Feed a small ginger bug about 1 tsp sugar and 1 tsp ginger a day. Too much sugar makes a thick syrup that can stall the yeast."
   source: claude
 - text: "Syrup thins when diluted with water. Ropy bacterial slime stays stretchy and stringy."
@@ -37,4 +41,20 @@
 - text: "Keep ginger submerged. Pieces above the liquid dry out and grow mold."
   source: claude
 - text: "Ambient room temperature is 20-22°C in winter and is not adjustable. Expect bubbles on day 3-5."
+  source: me
+- text: "Berlin tap water reads about 8-9 on my 1-14 strips (hard water)."
+  source: me
+- text: "Brew the soda when the bug is at its peak, 4-8 hours after a feed."
+  source: claude
+- text: "The finished soda's pH is the real safety check before bottling: orange-salmon (about 4) or lower."
+  source: claude
+- text: "For readable strips: daylight, a white paper background, wet end next to the chart, read within 15-30 seconds."
+  source: claude
+- text: "Don't leave a twist lid tightened on a first ferment. Use a cloth, or rest the lid on top unclamped."
+  source: claude
+- text: "Simmer = gentle bubbling on medium-low heat, not a rolling boil. Cool the liquid to lukewarm before adding the bug."
+  source: claude
+- text: "iPhone photos in HEIC can't be viewed directly. Set the camera to \"Most Compatible\" (JPEG)."
+  source: claude
+- text: "The strips responded in both directions (alkaline: tap water; acidic: soda), so I trust them for tracking trends. Right after mixing GBR.002 (juice of 1 lemon in 1.5 L), the strip turned much redder than before, as expected."
   source: me

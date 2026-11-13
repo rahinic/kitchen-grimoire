@@ -5,23 +5,40 @@ title: "Ginger Bug (Jaggery Retry)"
 tagline: "fourth attempt"
 status: "Ongoing"
 started: 2026-11-09
-planned: true
-vessel: "Glass jar, lid closed (opened twice a day: once to feed, once to check)"
-location: "Away from house plants and direct sun"
+vessel: "Clip-top glass jar, cleaned and aired overnight before starting"
+cover: "Glass lid clamped shut (opened twice a day: once to feed, once to check). Stirred well once in the morning and once in the evening after feeding."
+location: "Cupboard, away from house plants and direct sun"
 salt: "None"
-temp: "Room temp, about 20-22°C (heating-dependent, not controllable)"
+temp: "Room temp, about 20-22°C"
+fed: "Every day without fail (day 2 to day 5)"
+amounts: "? (assumed as advised: 1 tbsp ginger + 1 tsp jaggery on days 2-3, 1 tsp ginger + 1 tsp jaggery from day 4) [from Claude, edit if different]"
 ingredients:
   - 250 ml filtered water
-  - 1 tbsp ginger
+  - 1 tbsp grated ginger
   - 1 tbsp jaggery
-hypothesis: "Jaggery gave the most bubbles in GB.002 (by day 4), so I'm retrying it, with a smaller daily feed."
+hypothesis: "Jaggery gave the most bubbles in GB.002, so I retried it with a smaller daily feed. Also tested a closed lid and a location away from the monstera. No turmeric."
+plan_title: "Feeding plan"
 plan:
-  - "Daily feed from day 2: 1 tbsp ginger + 1 tsp jaggery. [from Claude]"
-  - "Stir at each opening and keep ginger submerged. No turmeric."
-  - "If thick or stringy: add ~100 ml water and skip that day's jaggery. [from Claude]"
-  - "Discard on a surface mat, white fuzz, sewer smell, or pH strip at 4.5+ on day 3 or 5. [from Claude]"
-  - "Optional: a second jar with white/brown sugar and the same setup as a comparison. Not confirmed. [from Claude]"
-lessons: "?"
+  - "Daily 1 tsp jaggery. Ginger 1 tbsp at first, then 1 tsp from day 4 because grated ginger was accumulating. [from Claude]"
+log:
+  - day: "Day 1"
+    note: "09.11.2026: Started. Photo: clear amber liquid, finely grated ginger in a band at the surface and suspended below, no bubbles, foam, film or mold. Reminders set for the twice-daily opening."
+  - day: "Day 2"
+    note: "10.11.2026: Fed: ? (advised 1 tbsp ginger + 1 tsp jaggery). Observations: ?"
+  - day: "Day 3"
+    note: "11.11.2026: Fine bubbles and light foam, grated ginger wet and golden, no white mat, fuzz or film (photos). Consistency good, flows off the spoon, not slimy. Smell healthy, a mix of jaggery and ginger. pH strip (1-14): bug about 5-6 (my read; the liquid tints the pad). Tap water strip as a control: dark olive-green, about 8-9. Fed: ? (advised 1 tbsp ginger + 1 tsp jaggery in the evening)."
+  - day: "Day 4"
+    note: "12.11.2026: Morning: smell good, liquid and not slimy, thick foam, ginger gratings stuck on the glass above the foam line (photos). pH strip about 5-6 (I read \"still above 4\"). About 8 hours later: more bubbles, fine foam over the ginger, consistency good, smell normal, no mat, fuzz or film. pH strip about 5, unchanged. Wondered whether the strips work and whether the liquid colour affects them. Fed: ? (advised 1 tsp ginger + 1 tsp jaggery)."
+  - day: "Day 5"
+    note: "13.11.2026: \"The best bug I've made so far.\" Liquid, not slimy, smells good, carbonation audible when I stir. Thick foam, ginger floating as a raft at the liquid line, no white mat, fuzz or film (photos). pH strip unchanged, about 5. Decided the bug is ready and brewed GBR.002 the same day."
+troubles: "pH did not drop below about 5-6 by day 5 (the strip reading may be affected by the dark liquid colour). Grated ginger accumulates into a raft at the surface. Stir it under at each opening."
+lessons:
+  - "Keep daily sugar small (1 tsp) and the ginger submerged."
+  - "Observations suggest the earlier failures were not caused by jaggery alone. [from Claude]"
+  - "Dark liquid tints pH strips, so strips are a rough trend guide. [from Claude]"
+  - "The soda's own pH is the real safety check, not the bug's. [from Claude]"
+  - "Lemon control test on the strips: not done. Strips responded in both directions (tap water about 8-9, bug about 5-6, soda orange), so I consider them to work. Accuracy is unverified."
+verdict: "Ready on day 5 (13.11.2026) by foam, thin texture, good smell and audible fizz, despite the pH strip staying about 5-6. Used to start GBR.002."
 ---
 
 Fourth attempt: retrying jaggery, with a smaller daily feed and a closed lid.

@@ -30,6 +30,7 @@ layout: default
   {%- if page.salt and page.salt != "" %}{% assign has_setup = true %}{% endif -%}
   {%- if page.temp and page.temp != "" %}{% assign has_setup = true %}{% endif -%}
   {%- if page.cover and page.cover != "" %}{% assign has_setup = true %}{% endif -%}
+  {%- if page.fed and page.fed != "" %}{% assign has_setup = true %}{% endif -%}
   {%- if page.location and page.location != "" %}{% assign has_setup = true %}{% endif -%}
   {%- if page.ingredients.size > 0 %}{% assign has_setup = true %}{% endif -%}
   {%- if has_setup %}
@@ -41,6 +42,8 @@ layout: default
       {%- if page.location and page.location != "" %}<div><dt>Location</dt><dd>{{ page.location }}</dd></div>{% endif %}
       {%- if page.salt and page.salt != "" %}<div><dt>Salt</dt><dd>{{ page.salt }}</dd></div>{% endif %}
       {%- if page.temp and page.temp != "" %}<div><dt>Temperature</dt><dd>{{ page.temp }}</dd></div>{% endif %}
+      {%- if page.fed and page.fed != "" %}<div><dt>Fed</dt><dd>{{ page.fed }}</dd></div>{% endif %}
+      {%- if page.amounts and page.amounts != "" %}<div><dt>Amounts</dt><dd>{{ page.amounts }}</dd></div>{% endif %}
       {%- if page.ingredients.size > 0 %}
       <div><dt>Ingredients</dt><dd><ul>{% for item in page.ingredients %}<li>{{ item }}</li>{% endfor %}</ul></dd></div>
       {%- endif %}
@@ -57,7 +60,7 @@ layout: default
 
   {%- if page.plan.size > 0 %}
   <section class="plan-block">
-    <h2><span class="sprig">❦</span> Plan <span class="sprig flip">❦</span></h2>
+    <h2><span class="sprig">❦</span> {{ page.plan_title | default: "Plan" }} <span class="sprig flip">❦</span></h2>
     <ul>{% for item in page.plan %}<li>{{ item }}</li>{% endfor %}</ul>
   </section>
   {%- endif %}
