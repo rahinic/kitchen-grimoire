@@ -15,7 +15,7 @@ ingredients:
   - "Juice of 1 lemon"
   - "60-70 ml GB.004 liquid"
 notes: "Ginger strained out after simmering: yes"
-plan_title: "Plan [from Claude]"
+plan_title: "Plan"
 plan:
   - "Bottle after about 24-48 hours (14-15.11) once fine bubbles and a thin foam appear and it still tastes sweet."
   - "Strip test before bottling (aim for orange-salmon, about 4, or lower), plus smell and look checks."

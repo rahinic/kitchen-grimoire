@@ -51,7 +51,7 @@ photos:
 troubles: "Gel-like, stringy texture on day 4 (possible ropy bacteria). Sliminess went away after dilution, but pH stayed around 4-5 and the smell was off. Not comfortable continuing."
 lessons:
   - "Gel-like texture and pH about 4-5 with an off smell: restarted rather than nursing it."
-  - "Daily 1 tbsp jaggery builds up roughly 5 tbsp of sugar in 250 ml by day 4. It's a risk factor, but GB.001 survived the same buildup, so it isn't a certain cause. [from Claude]"
+  - "Daily 1 tbsp jaggery builds up roughly 5 tbsp of sugar in 250 ml by day 4. It's a risk factor, but GB.001 survived the same buildup, so it isn't a certain cause."
 verdict: "Discarded 02.11.2026 (failed)."
 ---
 

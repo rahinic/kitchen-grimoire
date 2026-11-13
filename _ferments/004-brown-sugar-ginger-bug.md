@@ -34,10 +34,10 @@ photos:
     caption: "Side view"
 troubles: "No visible bubbles by day 5. Ginger above the liquid line dried out, then white growth spread across the surface. Smell off when emptied."
 lessons:
-  - "Keep ginger submerged and stir daily. [from Claude]"
+  - "Keep ginger submerged and stir daily."
   - "No bubbles by day 5 is a warning sign."
   - "Don't rely on smell alone (my sense of smell may be reduced). Use sight and pH strips, and ask someone else to sniff doubtful batches."
-  - "Cutting the feed to 1 tsp from day 2 may have underfed this bug. [from Claude]"
+  - "Cutting the feed to 1 tsp from day 2 may have underfed this bug."
 verdict: "Discarded 08.11.2026 (failed)."
 ---
 

@@ -4,6 +4,6 @@ items:
   - text: "My theories: cloth cover, turmeric, and the plant location (moisture, spores). Untested."
   - text: "Ranking: cover and plant location most likely (and they compound), jaggery likely for GB.002 only, turmeric least likely. Two different failure types: GB.002 was gel/bacteria-like, GB.003 was surface mold-like."
     source: claude
-  - text: "GB.004 tests the jaggery and closed-lid variables. Status so far: working (best bug so far). [from Claude] This supports, but does not prove, that the cloth cover, plant location or turmeric contributed to the GB.002 and GB.003 failures."
+  - text: "GB.004 tests the jaggery and closed-lid variables. Status so far: working (best bug so far). This supports, but does not prove, that the cloth cover, plant location or turmeric contributed to the GB.002 and GB.003 failures."
   - text: "Possible reason the bug stays near pH 5-6: jaggery minerals and hard Berlin water resisting acidification. Untested."
     source: claude

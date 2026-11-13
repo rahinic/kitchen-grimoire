@@ -65,7 +65,7 @@ tagline: "jars, bubbles and patience"
   <p class="hyp-intro">{{ site.data.hypotheses.intro }}</p>
   <ul class="key-facts">
     {% for h in site.data.hypotheses.items %}
-    <li>{{ h.text }}{% if h.source == "claude" %} <span class="src">from Claude</span>{% endif %}</li>
+    <li>{{ h.text }}{% if h.source == "me" %} <span class="src">from my own experience</span>{% endif %}</li>
     {% endfor %}
   </ul>
   {% endif %}
@@ -74,7 +74,7 @@ tagline: "jars, bubbles and patience"
   <h2 class="shelf-title second"><span class="sprig">❦</span> Key facts <span class="sprig flip">❦</span></h2>
   <ul class="key-facts">
     {% for k in site.data.key_facts %}
-    <li>{{ k.text }} <span class="src">{% if k.source == "claude" %}from Claude{% else %}from my own experience{% endif %}</span></li>
+    <li>{{ k.text }} {% if k.source == "me" %}<span class="src">from my own experience</span>{% endif %}</li>
     {% endfor %}
   </ul>
   <p class="disclaimer">This is a personal journal of what I tried, not food-safety advice.</p>
