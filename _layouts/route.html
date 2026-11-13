@@ -1,0 +1,56 @@
+---
+layout: default
+---
+<section class="hero hero-short">
+  <div class="hero-inner">
+    <p class="kicker">{{ page.kicker }}</p>
+    <h1>{{ page.title }}</h1>
+    <p class="tagline">{{ page.tagline }}</p>
+  </div>
+  <a class="scroll-cue" href="#route" aria-label="Start the route">↓</a>
+</section>
+
+<article class="sheet" id="route">
+  {%- if page.breakthrough %}
+  <aside class="breakthrough">
+    <p class="kicker">The breakthrough</p>
+    <p class="big">{{ page.breakthrough }}</p>
+  </aside>
+  {%- endif %}
+
+  <ol class="route">
+    <li class="stop">
+      <span class="pin">Day 0</span>
+      <div class="stop-card">
+        <h3>Set up</h3>
+        <dl class="kit">
+          <div><dt>Ingredients</dt><dd><ul>{% for i in page.setup.ingredients %}<li>{{ i }}</li>{% endfor %}</ul></dd></div>
+          <div><dt>Jar</dt><dd>{{ page.setup.jar }}</dd></div>
+          <div><dt>Container</dt><dd>{{ page.setup.container }}</dd></div>
+          <div><dt>Location</dt><dd>{{ page.setup.location }}</dd></div>
+          <div><dt>Temperature</dt><dd>{{ page.setup.temp }}</dd></div>
+        </dl>
+        {%- if page.daily %}<p class="daily"><strong>Every day</strong> {{ page.daily }}</p>{% endif %}
+      </div>
+    </li>
+    {%- for s in page.steps %}
+    <li class="stop">
+      <span class="pin">{{ s.day }}</span>
+      <div class="stop-card">
+        <h3>{{ s.title }}</h3>
+        <p>{{ s.text }}</p>
+        {%- if s.photo %}
+        <a class="stop-photo" href="{{ s.photo | relative_url }}" target="_blank" rel="noopener"><img src="{{ s.photo | relative_url }}" alt="{{ s.alt }}" loading="lazy"></a>
+        {%- elsif s.soon %}
+        <div class="photo-soon">photo to come</div>
+        {%- endif %}
+      </div>
+    </li>
+    {%- endfor %}
+  </ol>
+
+  {%- if page.note %}<p class="disclaimer">{{ page.note }}</p>{% endif %}
+  <p class="disclaimer">This is a personal journal of what I tried, not food-safety advice.</p>
+
+  <nav class="back"><a href="{{ page.log_url | relative_url }}">The full log: {{ page.log_label }} →</a> · <a href="{{ '/ferments/' | relative_url }}">← all ferments</a></nav>
+</article>

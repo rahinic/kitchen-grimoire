@@ -24,6 +24,7 @@
   <header class="topbar">
     <a class="brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
     <nav class="topnav" aria-label="Sections">
+      <a href="{{ '/ginger-bug/' | relative_url }}"{% if page.url contains '/ginger-bug/' %} class="on"{% endif %}>Ginger Bug</a>
       <a href="{{ '/ferments/' | relative_url }}"{% if page.url contains '/ferments/' %} class="on"{% endif %}>Ferments</a>
     </nav>
   </header>
